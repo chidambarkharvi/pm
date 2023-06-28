@@ -14,10 +14,12 @@ function CardTabs({allData}) {
     const [searchCards, setSearchCards] = useState('');
     const [filterOpen, setfilterOpen] = useState(false);
     const [activeTab, setActiveTab] = useState('My cards');
+    const [PageNo, setPageNo] = useState(0)
 
     const handleTabChange = (tab) => {
       setActiveTab(tab);
       console.log('Tab changed:', tab);
+      setPageNo(0)
     };
 
     const handleInputChange = (e) => {
@@ -29,7 +31,12 @@ function CardTabs({allData}) {
     }
     const handlePaginationClick = (page) =>{
       console.log("handlePaginationClick",page)
+      setPageNo(page)
     }
+
+    useEffect(() => {
+      console.log(allData,"allData 1")
+    }, [])
   
   return (
     <div style={{display: 'flex', flexDirection:"column",justifyContent:"space-between",height:"96vh"}}>
@@ -60,13 +67,13 @@ function CardTabs({allData}) {
 
       <Tab.Content>
         <Tab.Pane eventKey="My cards">
-         <MyCards cards={allData} searchCards={searchCards} />
+         <MyCards cards={allData} searchCards={searchCards} PageNo={PageNo} />
         </Tab.Pane>
         <Tab.Pane eventKey="All cards">
-          <AllCards cards={allData} searchCards={searchCards} />
+          <AllCards cards={allData} searchCards={searchCards} PageNo={PageNo} />
         </Tab.Pane>
         <Tab.Pane eventKey="Blocked cards">
-          <BlockedCards cards={allData} searchCards={searchCards} />
+          <BlockedCards cards={allData} searchCards={searchCards} PageNo={PageNo} />
         </Tab.Pane>
       </Tab.Content>
     </Tab.Container>
