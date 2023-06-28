@@ -4,10 +4,14 @@ import MyCards from './MyCards';
 import AllCards from './AllCards';
 import BlockedCards from './BlockedCards';
 import { Tab, Nav } from 'react-bootstrap';
+import FilterCard from '../card/FilterCard';
+import {BiFilter} from "react-icons/bi";
+
 
 
 function CardTabs({allData}) {
     const [searchTerm, setSearchTerm] = useState('');
+    const [filterOpen, setfilterOpen] = useState(false);
     const [activeTab, setActiveTab] = useState('My cards');
 
     const handleTabChange = (tab) => {
@@ -18,8 +22,14 @@ function CardTabs({allData}) {
     const handleInputChange = (e) => {
       setSearchTerm(e.target.value);
     };
+
+    const handleFilterOpen = () =>{
+      setfilterOpen(true)
+    }
   
   return (
+    <>
+
     <div >
 <div style={{float:"right",padding:"10px"}}>
       <input
@@ -29,7 +39,7 @@ function CardTabs({allData}) {
         placeholder="search here"
       />
       {/* <button class="search" onClick={handleSearch}>Search</button> */}
-      <button className="filter" ><i class="fa fa-filter"></i> Filter</button>
+      <button className="filter" onClick={handleFilterOpen} > <BiFilter/> Filter</button>
     </div>
     <Tab.Container activeKey={activeTab} onSelect={handleTabChange}>
       <Nav variant="tabs">
@@ -58,6 +68,10 @@ function CardTabs({allData}) {
     </Tab.Container>
 
     </div>
+    <FilterCard filterOpen={filterOpen} setfilterOpen={setfilterOpen}  />
+
+    </>
+
   )
 }
 

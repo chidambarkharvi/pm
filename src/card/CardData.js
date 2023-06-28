@@ -20,7 +20,7 @@ function CardData({mycards}) {
         <h1 className="name" >{val.name}</h1>
         <h6  className='budget'>name <BsDot/> Budget </h6>  
       </div>
-      <RiRefreshLine className='icon'/>
+      <RiRefreshLine style={{backgroundColor:"pink"}} className='icon'/>
       </div>
 
       <div style={{display: 'flex',justifyContent:"space-between",width:"85%"}}>
