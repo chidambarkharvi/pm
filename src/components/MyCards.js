@@ -1,25 +1,31 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
+import CardData from '../card/CardData'
 
-function MyCards({cards,namea}) {
+function MyCards({cards}) {
+    const [mycards, setmycards] = useState([])
+    const [ownerId, setownerId] = useState(2)
+
+ const getDatas = (cards) =>{
+    cards.map((val)=>{
+        if(val.owner_id === ownerId ){
+            mycards.push(val)
+        }
+    })
+    
+ }
     useEffect(() => {
-    console.log(cards,"mycards",namea)
-    }, [])
+if(mycards.length == 0)
+    getDatas(cards)
 
-const data = cards.map((val)=>{
- return (
-    <div key={val.owner_id    }>
-    <h1> {val.name}</h1>
-    <h1> {val.name}</h1>
+    }, [cards])
 
-    </div>
-
- )  
-})
 
   return (
     <div>
-      <h1>MyCards{namea} </h1>
-{data}
+ <CardData mycards={mycards} />
+
+    {/* </div>)
+})} */}
     </div>
   )
 }

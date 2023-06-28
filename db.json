@@ -1,0 +1,367 @@
+{
+  "data": [
+    {
+      "name": "Mixmax",
+      "budget_name": "Software subscription",
+      "owner_id": 1,
+      "spent": {
+        "value": 100,
+        "currency": "SGD"
+      },
+      "available_to_spend": {
+        "value": 1000,
+        "currency": "SGD"
+      },
+      "card_type": "burner",
+      "expiry": "9 Feb",
+      "limit": 100,
+      "status": "active"
+    },
+    {
+      "name": "Quickbooks",
+      "budget_name": "Software subscription",
+      "owner_id": 2,
+      "spent": {
+        "value": 50,
+        "currency": "SGD"
+      },
+      "available_to_spend": {
+        "value": 250,
+        "currency": "SGD"
+      },
+      "card_type": "subscription",
+      "limit": 10,
+      "status": "active"
+    },
+    {
+      "name": "Card 3",
+      "budget_name": "Budget 3",
+      "owner_id": 1,
+      "spent": {
+        "value": 0,
+        "currency": "SGD"
+      },
+      "available_to_spend": {
+        "value": 500,
+        "currency": "SGD"
+      },
+      "card_type": "burner",
+      "expiry": "15 Mar",
+      "limit": 200,
+      "status": "active"
+    },
+    {
+      "name": "Card 4",
+      "budget_name": "Budget 4",
+      "owner_id": 3,
+      "spent": {
+        "value": 150,
+        "currency": "SGD"
+      },
+      "available_to_spend": {
+        "value": 200,
+        "currency": "SGD"
+      },
+      "card_type": "subscription",
+      "limit": 50,
+      "status": "blocked"
+    },
+    {
+      "name": "Card 5",
+      "budget_name": "Budget 5",
+      "owner_id": 1,
+      "spent": {
+        "value": 50,
+        "currency": "SGD"
+      },
+      "available_to_spend": {
+        "value": 300,
+        "currency": "SGD"
+      },
+      "card_type": "burner",
+      "expiry": "20 Apr",
+      "limit": 150,
+      "status": "active"
+    },
+    {
+      "name": "Card 6",
+      "budget_name": "Budget 6",
+      "owner_id": 2,
+      "spent": {
+        "value": 200,
+        "currency": "SGD"
+      },
+      "available_to_spend": {
+        "value": 800,
+        "currency": "SGD"
+      },
+      "card_type": "subscription",
+      "limit": 100,
+      "status": "active"
+    },
+    {
+      "name": "Card 7",
+      "budget_name": "Budget 7",
+      "owner_id": 3,
+      "spent": {
+        "value": 75,
+        "currency": "SGD"
+      },
+      "available_to_spend": {
+        "value": 150,
+        "currency": "SGD"
+      },
+      "card_type": "burner",
+      "expiry": "10 May",
+      "limit": 50,
+      "status": "blocked"
+    },
+    {
+      "name": "Card 8",
+      "budget_name": "Budget 8",
+      "owner_id": 1,
+      "spent": {
+        "value": 300,
+        "currency": "SGD"
+      },
+      "available_to_spend": {
+        "value": 500,
+        "currency": "SGD"
+      },
+      "card_type": "subscription",
+      "limit": 200,
+      "status": "active"
+    },
+    {
+      "name": "Card 9",
+      "budget_name": "Budget 9",
+      "owner_id": 2,
+      "spent": {
+        "value": 150,
+        "currency": "SGD"
+      },
+      "available_to_spend": {
+        "value": 300,
+        "currency": "SGD"
+      },
+      "card_type": "burner",
+      "expiry": "25 Jun",
+      "limit": 100,
+      "status": "active"
+    },
+    {
+      "name": "Card 10",
+      "budget_name": "Budget 10",
+      "owner_id": 3,
+      "spent": {
+        "value": 50,
+        "currency": "SGD"
+      },
+      "available_to_spend": {
+        "value": 200,
+        "currency": "SGD"
+      },
+      "card_type": "subscription",
+      "limit": 50,
+      "status": "blocked"
+    },
+    {
+      "name": "Card 11",
+      "budget_name": "Budget 11",
+      "owner_id": 1,
+      "spent": {
+        "value": 100,
+        "currency": "SGD"
+      },
+      "available_to_spend": {
+        "value": 1000,
+        "currency": "SGD"
+      },
+      "card_type": "burner",
+      "expiry": "9 Feb",
+      "limit": 100,
+      "status": "active"
+    },
+    {
+      "name": "Card 12",
+      "budget_name": "Budget 12",
+      "owner_id": 2,
+      "spent": {
+        "value": 50,
+        "currency": "SGD"
+      },
+      "available_to_spend": {
+        "value": 250,
+        "currency": "SGD"
+      },
+      "card_type": "subscription",
+      "limit": 10,
+      "status": "active"
+    },
+    {
+      "name": "Card 13",
+      "budget_name": "Budget 13",
+      "owner_id": 1,
+      "spent": {
+        "value": 0,
+        "currency": "SGD"
+      },
+      "available_to_spend": {
+        "value": 500,
+        "currency": "SGD"
+      },
+      "card_type": "burner",
+      "expiry": "15 Mar",
+      "limit": 200,
+      "status": "active"
+    },
+    {
+      "name": "Card 14",
+      "budget_name": "Budget 14",
+      "owner_id": 3,
+      "spent": {
+        "value": 150,
+        "currency": "SGD"
+      },
+      "available_to_spend": {
+        "value": 200,
+        "currency": "SGD"
+      },
+      "card_type": "subscription",
+      "limit": 50,
+      "status": "blocked"
+    },
+    {
+      "name": "Card 15",
+      "budget_name": "Budget 15",
+      "owner_id": 1,
+      "spent": {
+        "value": 50,
+        "currency": "SGD"
+      },
+      "available_to_spend": {
+        "value": 300,
+        "currency": "SGD"
+      },
+      "card_type": "burner",
+      "expiry": "20 Apr",
+      "limit": 150,
+      "status": "active"
+    },
+    {
+      "name": "Card 16",
+      "budget_name": "Budget 16",
+      "owner_id": 2,
+      "spent": {
+        "value": 200,
+        "currency": "SGD"
+      },
+      "available_to_spend": {
+        "value": 800,
+        "currency": "SGD"
+      },
+      "card_type": "subscription",
+      "limit": 100,
+      "status": "active"
+    },
+    {
+      "name": "Card 17",
+      "budget_name": "Budget 17",
+      "owner_id": 3,
+      "spent": {
+        "value": 75,
+        "currency": "SGD"
+      },
+      "available_to_spend": {
+        "value": 150,
+        "currency": "SGD"
+      },
+      "card_type": "burner",
+      "expiry": "10 May",
+      "limit": 50,
+      "status": "blocked"
+    },
+    {
+      "name": "Card 18",
+      "budget_name": "Budget 18",
+      "owner_id": 1,
+      "spent": {
+        "value": 300,
+        "currency": "SGD"
+      },
+      "available_to_spend": {
+        "value": 500,
+        "currency": "SGD"
+      },
+      "card_type": "subscription",
+      "limit": 200,
+      "status": "active"
+    },
+    {
+      "name": "Card 19",
+      "budget_name": "Budget 19",
+      "owner_id": 2,
+      "spent": {
+        "value": 150,
+        "currency": "SGD"
+      },
+      "available_to_spend": {
+        "value": 300,
+        "currency": "SGD"
+      },
+      "card_type": "burner",
+      "expiry": "25 Jun",
+      "limit": 100,
+      "status": "active"
+    },
+    {
+      "name": "Card 20",
+      "budget_name": "Budget 20",
+      "owner_id": 3,
+      "spent": {
+        "value": 50,
+        "currency": "SGD"
+      },
+      "available_to_spend": {
+        "value": 200,
+        "currency": "SGD"
+      },
+      "card_type": "subscription",
+      "limit": 50,
+      "status": "blocked"
+    },
+    {
+      "name": "Card 21",
+      "budget_name": "Budget 21",
+      "owner_id": 1,
+      "spent": {
+        "value": 100,
+        "currency": "SGD"
+      },
+      "available_to_spend": {
+        "value": 1000,
+        "currency": "SGD"
+      },
+      "card_type": "burner",
+      "expiry": "9 Feb",
+      "limit": 100,
+      "status": "active"
+    },
+    {
+      "name": "Card 22",
+      "budget_name": "Budget 22",
+      "owner_id": 2,
+      "spent": {
+        "value": 50,
+        "currency": "SGD"
+      },
+      "available_to_spend": {
+        "value": 250,
+        "currency": "SGD"
+      },
+      "card_type": "subscription",
+      "limit": 10,
+      "status": "active"
+    }
+  ]
+}

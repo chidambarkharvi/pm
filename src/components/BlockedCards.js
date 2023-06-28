@@ -1,12 +1,25 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
+import CardData from '../card/CardData'
 
 function BlockedCards({cards}) {
+    const [mycards, setmycards] = useState([])
+
+ const getDatas = (cards) =>{
+    cards.map((val)=>{
+        console.log(cards,"cardssss")
+        if(val.status === "blocked" ){
+            mycards.push(val) }
+    })
+ }
     useEffect(() => {
-        console.log(cards,"blocked cards")
-        }, [])
+if(mycards.length == 0)
+    getDatas(cards)
+    }, [cards])
+
   return (
     <div>
-      <h1>BlockedCards</h1>
+ <CardData mycards={mycards} />
+
     </div>
   )
 }

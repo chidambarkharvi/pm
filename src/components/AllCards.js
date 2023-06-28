@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react'
+import CardData from '../card/CardData'
 
 function AllCards({cards}) {
     useEffect(() => {
         console.log(cards,"allcards")
         }, [])
+
   return (
     <div>
-      <h1>AllCards</h1>
+ <CardData  mycards={cards} />
     </div>
   )
 }
