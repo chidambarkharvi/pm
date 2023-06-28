@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import MyCards from './MyCards';
+import AllCards from './AllCards';
+import BlockedCards from './BlockedCards';
 // import { IoFilterSharp } from 'react-icons/io';
 
 
@@ -36,13 +39,13 @@ function CardTabs({onSearch}) {
     >
        
       <Tab eventKey="home" title="Your cards">
-        Tab content for Home
+       <MyCards/>
       </Tab>
       <Tab eventKey="profile" title="All cards">
-        Tab content for Profile
+        <AllCards/>
       </Tab>
       <Tab eventKey="contact" title="Blocked cards" >
-        Tab content for Contact
+        <BlockedCards/>
       </Tab>
     </Tabs>
 
