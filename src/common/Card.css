@@ -1,0 +1,47 @@
+
+
+
+.name{
+ font-size:20px;
+ font-weight: bold;
+}
+
+.budget{
+    color:grey
+}
+
+.icon{
+    color:rgb(210, 112, 128);
+    font-size:20px;
+    background-color: pink;
+    width: 35px;
+    height: 35px; 
+    border-radius:50%;
+
+    
+}
+
+.amount,.spent{
+    color:grey;
+    font-size: 14px;
+}
+
+.amountValue{
+    color:rgb(18, 17, 17);
+    font-size: 14px; 
+}
+
+.cards{
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.balSpent{
+    display: flex;justify-content: space-between;
+    margin-top: 5px;
+}
+
+.bal{
+    color: rgba(25, 25, 25,0.8);
+    font-size:14px;
+    font-weight: bold;
+}
