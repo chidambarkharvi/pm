@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
-function AllCards() {
+function AllCards({cards}) {
+    useEffect(() => {
+        console.log(cards,"allcards")
+        }, [])
   return (
     <div>
       <h1>AllCards</h1>
