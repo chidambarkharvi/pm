@@ -25,10 +25,8 @@ function CardTabs({onSearch}) {
         onChange={handleInputChange}
         placeholder="search here"
       />
-      <button onClick={handleSearch}>Search</button>
-      <button>
-       filter 
-      </button>
+      {/* <button class="search" onClick={handleSearch}>Search</button> */}
+      <button class="filter" ><i class="fa fa-filter"></i> Filter</button>
     </div>
 
     <Tabs
