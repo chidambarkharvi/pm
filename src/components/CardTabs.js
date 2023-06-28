@@ -62,7 +62,7 @@ function CardTabs({allData}) {
           <AllCards cards={allData} searchCards={searchCards} />
         </Tab.Pane>
         <Tab.Pane eventKey="Blocked cards">
-          <BlockedCards cards={allData} searchCard={searchCards} />
+          <BlockedCards cards={allData} searchCards={searchCards} />
         </Tab.Pane>
       </Tab.Content>
     </Tab.Container>
