@@ -1,5 +1,10 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
+import {BsDot} from "react-icons/bs";
+import {RiRefreshLine} from "react-icons/ri";
+import {GoDotFill} from "react-icons/go";
+import ProgressBar from 'react-bootstrap/ProgressBar';
+import "./Card.css"
 
 
 function CardData({mycards}) {
@@ -8,17 +13,46 @@ function CardData({mycards}) {
 <div className="cardDiv">
 {mycards?.map((val) => {
       return ( <div >
-            <h1>{val?.name}</h1>
-            <Card style={{ width: '18rem' }}>
+            <Card className='cards' style={{ width: 'auto',maxWidth:"400px" ,minWidth:"300px",paddingTop:"20px",paddingBottom:"10px"}}>
     <Card.Body>
-      <Card.Title>Card Title</Card.Title>
-      <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the
-        bulk of the card's content.
-      </Card.Text>
-      <Card.Link href="#">Card Link</Card.Link>
-      <Card.Link href="#">Another Link</Card.Link>
+      <div style={{display: 'flex',justifyContent: 'space-between'}}>
+       <div>
+        <h1 className="name" >{val.name}</h1>
+        <h6  className='budget'>name <BsDot/> Budget </h6>  
+      </div>
+      <RiRefreshLine className='icon'/>
+      </div>
+
+      <div style={{display: 'flex',justifyContent:"space-between",width:"85%"}}>
+      <div >
+        <h1 className="amount" >AMOUNT</h1>
+        <h6  className='amountValue'>{val.available_to_spend.value}  {val.available_to_spend.currency} </h6>  
+      </div>
+      <div>
+        <h1 className="amount" >FREQUENCY</h1>
+        <h6  className='amountValue'>Monthly  </h6>  
+      </div>
+      <div>
+        <h1 className="amount" >EXPIRY</h1>
+        <h6  className='amountValue'>{val.expiry ? val.expiry : "N/A"  }</h6>  
+      </div>
+      </div>
+
+      <ProgressBar style={{ height: '10px' }} >
+      <ProgressBar  variant="success" now={45} key={1} />
+      <ProgressBar variant="danger" now={55} key={2} style={{ backgroundColor: 'pink' }} />
+    </ProgressBar>
+
+    <div className="balSpent" >
+        <h1 className="spent" > <span><GoDotFill  style={{color:"green"}}/></span> Spent </h1>
+        <h6  className='bal'>{val.spent.value} {val.spent.currency}  </h6>  
+      </div>
+
+      <div className='balSpent'>
+      <h1 className="spent" > <span><GoDotFill style={{color:"red"}}/></span> Balance </h1>
+        <h6  className='bal'>{val.available_to_spend.value}  {val.available_to_spend.currency}</h6>  
+      </div>
+
     </Card.Body>
   </Card>
     

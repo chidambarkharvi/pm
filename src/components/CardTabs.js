@@ -5,6 +5,7 @@ import AllCards from './AllCards';
 import BlockedCards from './BlockedCards';
 import { Tab, Nav } from 'react-bootstrap';
 
+
 function CardTabs({allData}) {
     const [searchTerm, setSearchTerm] = useState('');
     const [activeTab, setActiveTab] = useState('My cards');
