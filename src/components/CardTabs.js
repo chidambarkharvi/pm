@@ -10,7 +10,7 @@ import {BiFilter} from "react-icons/bi";
 
 
 function CardTabs({allData}) {
-    const [searchTerm, setSearchTerm] = useState('');
+    const [searchCards, setSearchCards] = useState('');
     const [filterOpen, setfilterOpen] = useState(false);
     const [activeTab, setActiveTab] = useState('My cards');
 
@@ -20,7 +20,7 @@ function CardTabs({allData}) {
     };
 
     const handleInputChange = (e) => {
-      setSearchTerm(e.target.value);
+      setSearchCards(e.target.value);
     };
 
     const handleFilterOpen = () =>{
@@ -34,7 +34,7 @@ function CardTabs({allData}) {
 <div style={{float:"right",padding:"10px"}}>
       <input
         type="text"
-        value={searchTerm}
+        value={searchCards}
         onChange={handleInputChange}
         placeholder="search here"
       />
@@ -56,13 +56,13 @@ function CardTabs({allData}) {
 
       <Tab.Content>
         <Tab.Pane eventKey="My cards">
-         <MyCards cards={allData} />
+         <MyCards cards={allData} searchCards={searchCards} />
         </Tab.Pane>
         <Tab.Pane eventKey="All cards">
-          <AllCards cards={allData} />
+          <AllCards cards={allData} searchCards={searchCards} />
         </Tab.Pane>
         <Tab.Pane eventKey="Blocked cards">
-          <BlockedCards cards={allData} />
+          <BlockedCards cards={allData} searchCard={searchCards} />
         </Tab.Pane>
       </Tab.Content>
     </Tab.Container>
