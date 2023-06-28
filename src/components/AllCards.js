@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import CardData from '../card/CardData'
+import CardData from '../common/CardData'
 
 function AllCards({cards,searchCards}) {
     const [mycards, setmycards] = useState([])
-
 
     const getFilteredCards = (cards) => {
         const filteredCards = cards.filter((val) => {

@@ -4,8 +4,9 @@ import MyCards from './MyCards';
 import AllCards from './AllCards';
 import BlockedCards from './BlockedCards';
 import { Tab, Nav } from 'react-bootstrap';
-import FilterCard from '../card/FilterCard';
+import FilterCard from '../common/FilterCard';
 import {BiFilter} from "react-icons/bi";
+import PaginationComp from '../common/PaginationComp';
 
 
 
@@ -26,11 +27,14 @@ function CardTabs({allData}) {
     const handleFilterOpen = () =>{
       setfilterOpen(true)
     }
+    const handlePaginationClick = (page) =>{
+      console.log("handlePaginationClick",page)
+    }
   
   return (
-    <>
+    <div style={{display: 'flex', flexDirection:"column",justifyContent:"space-between",height:"96vh"}}>
 
-    <div >
+    <div style={{width:"97%",overflowX:"hidden",paddingBottom:"50px"}} >
 <div style={{float:"right",padding:"10px"}}>
       <input
         type="text"
@@ -68,9 +72,13 @@ function CardTabs({allData}) {
     </Tab.Container>
 
     </div>
-    <FilterCard filterOpen={filterOpen} setfilterOpen={setfilterOpen}  />
+    <div style={{display:"flex",justifyContent:"center"}}>
 
-    </>
+    <PaginationComp handlePageClick={handlePaginationClick} className="card-tabs-footer"/>
+    </div>
+    <FilterCard  filterOpen={filterOpen} setfilterOpen={setfilterOpen}  />
+
+    </div>
 
   )
 }
