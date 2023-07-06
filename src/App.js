@@ -13,7 +13,7 @@ function App() {
     try {
       const response = await fetch('http://localhost:3004/data');
       const data = await response.json();
-      console.log(data,"dataa")
+      console.log(data, "dataa")
       setCards(data);
       // mycards()
     } catch (error) {
@@ -26,10 +26,15 @@ function App() {
     fetchCards();
   }, []);
 
+  const appFunctionRun = () => {
+    console.log("appFunctionRun clicked")
+  }
 
   return (
     <div>
-      <CardTabs allData={cards} />
+
+      <CardTabs appFunctionRunForcard={appFunctionRun} allData={cards} />
+
     </div>
   )
 }

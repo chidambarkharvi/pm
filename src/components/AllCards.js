@@ -8,7 +8,7 @@ function AllCards({cards,searchCards,PageNo}) {
         const filteredCards = cards
           .filter((val) => val.name.toLowerCase().includes(searchCards.toLowerCase()))
           .slice(0+PageNo, PageNo+10);
-      
+                     
         setmycards(filteredCards);
       };
     
